@@ -104,7 +104,14 @@ blackbar = np.zeros((combined_image.shape[0], 10, 3), np.uint8)
 combined_image = np.hstack((blackbar, combined_image, blackbar))
 
 #---------------------------------------------------------------------------- ST:
-st.title("Essa pessaoa tuitaria algo como:")
+
+st.set_page_config(
+    page_icon='✍️',
+    page_title='Adivinhe quem tuitou',
+    layout='wide'
+)
+
+st.title("Essa pessoa tuitaria algo como:")
 
 if st.button(r'$\textsf{\LARGE Gerar Tweet}$'):
     st.image(combined_image, use_column_width=True)
