@@ -1,5 +1,3 @@
-#Feito com carinho por Thiago Narcizo <3
-
 import numpy as np
 import streamlit as st
 import cv2
@@ -13,7 +11,6 @@ st.set_page_config(
     page_title='Adivinhe quem tuitou',
     layout='wide'
 )
-
 
 #cadeia de markov para gerar a frase:
 pessoa = open(r'tweets.txt', encoding='utf8').read()
@@ -104,12 +101,6 @@ blackbar = np.zeros((combined_image.shape[0], 10, 3), np.uint8)
 combined_image = np.hstack((blackbar, combined_image, blackbar))
 
 #---------------------------------------------------------------------------- ST:
-
-st.set_page_config(
-    page_icon='✍️',
-    page_title='Adivinhe quem tuitou',
-    layout='wide'
-)
 
 st.title("Essa pessoa tuitaria algo como:")
 
