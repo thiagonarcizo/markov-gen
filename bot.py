@@ -58,7 +58,7 @@ st.set_page_config(
     layout='wide'
 )
 
-st.title("Essa pessaoa tuitaria algo como:")
+st.title("Essa pessoa tuitaria algo como:")
 
 
 if st.button(r'''$\textsf{\LARGE Gerar Tweet}$'''):
